@@ -1,11 +1,11 @@
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root';
 import ErrorPage from './routes/ErrorPage';
 import NewsPage from './routes/NewsPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Root />,
